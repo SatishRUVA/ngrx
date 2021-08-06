@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { LocationData } from '../models/location-data/location-data';
+import { LocationData } from 'src/app/models/location-data/location-data';
 
 export enum LocationActionTypes {
   LoadLocations = '[Home Page] Load Locations',

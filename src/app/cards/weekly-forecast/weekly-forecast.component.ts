@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { WeatherData } from 'src/app/models/weather-data/weather-data';
 import { Store, select } from '@ngrx/store';
-import { AppState, selectWeather } from 'src/app/reducers';
+import { AppState, selectWeather } from 'src/app/cards/ngrx/reducers';
 import { Observable } from 'rxjs';
 
 @Component({

@@ -9,7 +9,7 @@ import { catchError, mergeMap } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { LocationData } from '../models/location-data/location-data';
 import { Store } from '@ngrx/store';
-import { AppState } from '../reducers';
+import { AppState } from '../cards/ngrx/reducers';
 
 @Injectable({
   providedIn: 'root'

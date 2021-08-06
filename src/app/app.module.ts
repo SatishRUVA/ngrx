@@ -15,14 +15,14 @@ import { HourlyForecastComponent } from './cards/hourly-forecast/hourly-forecast
 import { AboutMobileComponent } from './cards/about-mobile/about-mobile.component';
 import { AboutDesktopComponent } from './cards/about-desktop/about-desktop.component';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
+import { reducers, metaReducers } from './cards/ngrx/reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
-import { WeatherEffects } from './weather/weather.effects';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RadarMobileComponent } from './cards/radar-mobile/radar-mobile.component';
 import { RadarDesktopComponent } from './cards/radar-desktop/radar-desktop.component';
+import { WeatherEffects } from './cards/ngrx/weather/weather.effects';
 
 @NgModule({
   declarations: [

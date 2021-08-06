@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HourlyForecastComponent } from './hourly-forecast.component';
 import { AngularMaterialModule } from '../../../angular-material/angular-material.module';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from 'src/app/reducers';
+import { reducers, metaReducers } from 'src/app/cards/ngrx/reducers';
 
 describe('HourlyForecastComponent', () => {
   let component: HourlyForecastComponent;

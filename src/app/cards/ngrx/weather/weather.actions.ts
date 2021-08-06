@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { WeatherData } from '../models/weather-data/weather-data';
+import { WeatherData } from '../../../models/weather-data/weather-data';
 
 export enum WeatherActionTypes {
   LoadWeather = '[Home Page] Load Weather'

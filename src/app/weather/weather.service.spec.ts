@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { WeatherService } from './weather.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from '../reducers';
+import { reducers, metaReducers } from '../cards/ngrx/reducers';
 import { LocationData } from '../models/location-data/location-data';
 import { of } from 'rxjs';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';

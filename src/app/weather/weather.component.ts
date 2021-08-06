@@ -9,17 +9,17 @@ import { HourlyForecastComponent } from '../cards/hourly-forecast/hourly-forecas
 import { AboutDesktopComponent } from '../cards/about-desktop/about-desktop.component';
 import { AboutMobileComponent } from '../cards/about-mobile/about-mobile.component';
 import { Store, select } from '@ngrx/store';
-import { AppState, selectError } from '../reducers';
-import { LoadLocations } from './location.actions';
+import { AppState, selectError } from '../cards/ngrx/reducers';
 import { LocationData } from '../models/location-data/location-data';
 import { FormControl } from '@angular/forms';
 import { Observable, Subject } from 'rxjs';
 import * as USCities from '../../assets/us_cities.json';
 import { City } from '../models/city/city';
 import { MatAutocompleteSelectedEvent } from '@angular/material';
-import { LoadWeather } from './weather.actions';
+import { LoadWeather } from '../cards/ngrx/weather/weather.actions';
 import { RadarDesktopComponent } from '../cards/radar-desktop/radar-desktop.component';
 import { RadarMobileComponent } from '../cards/radar-mobile/radar-mobile.component';
+import { LoadLocations } from '../cards/ngrx/location/location.actions';
 
 @Component({
   selector: 'app-weather',

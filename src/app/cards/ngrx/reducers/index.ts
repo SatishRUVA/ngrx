@@ -1,9 +1,9 @@
 import { ActionReducerMap, MetaReducer } from '@ngrx/store';
-import { environment } from '../../environments/environment';
-import { WeatherData } from '../models/weather-data/weather-data';
+import { environment } from '../../../../environments/environment';
+import { WeatherData } from '../../../models/weather-data/weather-data';
 import { WeatherActionTypes, WeatherAction } from '../weather/weather.actions';
-import { LocationActionTypes, LocationAction } from '../weather/location.actions';
-import { LocationData } from '../models/location-data/location-data';
+import { LocationData } from '../../../models/location-data/location-data';
+import { LocationAction, LocationActionTypes } from '../location/location.actions';
 
 export interface WeatherState {
   weatherData: WeatherData| null;
@@ -63,6 +63,8 @@ export const reducers: ActionReducerMap<AppState> = {
 
   weather: weatherReducer,
   location: locationReducer
+
+
 };
 
 export const selectWeather = (state: AppState) => state.weather.weatherData;

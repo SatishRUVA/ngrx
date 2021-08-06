@@ -12,7 +12,7 @@ import { WeatherComponent } from './weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from '../../angular-material/angular-material.module';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from '../reducers';
+import { reducers, metaReducers } from '../cards/ngrx/reducers';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('WeatherComponent', () => {
